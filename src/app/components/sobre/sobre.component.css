@@ -1,0 +1,28 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 200px;
+}
+
+.container-texto{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: solid 4px #ff4c5f;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+
+.container-texto .texto-colorido{
+  color: #ff4c5f
+}
+
+.container-texto h1{
+  font-size: 3rem;
+}
+
