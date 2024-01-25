@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './title.component.css'
 })
 export class TitleComponent {
+  
+
+  constructor(){
+
+  }
+
 
 }
