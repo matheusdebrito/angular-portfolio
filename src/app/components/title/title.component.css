@@ -9,11 +9,12 @@
   font-weight: bold;
   font-size: 1.5rem;
   position: fixed;
-  top: 1px;
+  top: 0px;
+  background-color: #111111;
 }
 
 .logo{
-  color:#ff4c5f
+  color:#ff4c5f;
 }
 
 .lista-menu{
