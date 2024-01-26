@@ -26,7 +26,6 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
 }
 
 .projeto{
@@ -55,4 +54,18 @@ a{
 
 .icone{
   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .projetos{
+    overflow: scroll;
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+
+  .projeto{
+    width: 80%;
+  }
+
 }

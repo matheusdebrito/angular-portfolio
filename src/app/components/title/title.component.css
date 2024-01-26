@@ -17,6 +17,16 @@
   color:#ff4c5f;
 }
 
+.menu{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.menu button{
+  display: none;
+}
+
 .lista-menu{
   list-style: none;
   display: flex;
@@ -26,5 +36,77 @@
 .item-lista{
   padding: 1rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+  .menu{
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+
+  #btn-mobile{
+    width: 10%;
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    gap: .5rem;
+    justify-content: flex-end;
+  }
+
+  #hamburger{
+    border-top: 2px solid;
+    width: 20px;
+    display: block;
+  }
+
+  #hamburger::after, #hamburger::before{
+    width:20px;
+        height: 2px;
+        background-color: currentColor;
+        content: "";
+        display: block;
+        margin-top: 5px;
+        transition: .2s;
+        position: relative;
+  }
+
+  .lista-menu{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 0px;
+    overflow: hidden;
+    transition: .4s;
+    background: #111111;
+    top: 30px;
+    right: -20px;
+  }
+
+  .menu.active .lista-menu{
+    height: 30vh;
+  }
+
+  .menu.active #hamburger{
+    border-top-color: transparent;
+}
+
+  .menu.active #hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  .menu.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+
+}
+
 }
 

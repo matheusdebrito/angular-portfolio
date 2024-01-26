@@ -2,11 +2,15 @@
   <div class="logo">
     <p>MB</p>
   </div>
+
   <div class="menu">
+    <button id="btn-mobile" (click)="btnMobile()">
+      <span id="hamburger"></span>
+  </button>
     <ul class="lista-menu">
-      <li class="item-lista"><a>Home</a></li>
-      <li class="item-lista"><a>Projetos</a></li>
-      <li class="item-lista"><a>Contatos</a></li>
+      <li class="item-lista"><a (click)="moveToHome()">Home</a></li>
+      <li class="item-lista"><a (click)="moveToProjetos()">Projetos</a></li>
+      <li class="item-lista"><a (click)="moveToContatos()">Contatos</a></li>
     </ul>
   </div>
 </div>

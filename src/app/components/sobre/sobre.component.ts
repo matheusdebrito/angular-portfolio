@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './sobre.component.css'
 })
 export class SobreComponent {
-
+  
 }
