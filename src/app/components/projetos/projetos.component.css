@@ -29,11 +29,15 @@ a{
 }
 
 .projeto{
+  display: flex;
+  flex-direction: column;
   width: 40%;
+  height: 500px;
   border: solid 4px #ff4c5f;
   border-radius: .5rem;
   padding: 1rem;
   margin: .3rem;
+  overflow: hidden;
 }
 
 .projeto a{
