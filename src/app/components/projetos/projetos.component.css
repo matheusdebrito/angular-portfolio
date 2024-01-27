@@ -36,15 +36,23 @@ a{
   margin: .3rem;
 }
 
+.projeto a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .imagem-projeto{
-  width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: 200px;
+  display: flex;
 }
 
 .tecnologias{
   list-style: none;
   display: flex;
   justify-content: center;
-  /* display: none; */
 }
 
 .tecnologias li{
@@ -53,7 +61,7 @@ a{
 }
 
 .icone{
-  width: 100%;
+  width: 18px;
 }
 
 @media screen and (max-width: 500px) {
